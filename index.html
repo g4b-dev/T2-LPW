@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pics//icons/gc-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3b7ea4974c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap" rel="stylesheet">
+    <title>Gabriel Costa - Apresentação</title>
+</head>
+<body>
+    <nav class="cabecalho"> <!--menu de navegação com as paginas secundárias-->
+        <div class="logo" id="logo">
+            <a href="index.html"><span id="first-name">Gabriel</span><span id="second-name"> Costa</span></a>
+        </div>
+        <input type="checkbox" id="click-menu">
+        <label for="click-menu" class="sandwich">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul class="nav-list">
+            <button class="button-nav" onclick = "gfg_Run()"> 
+                Tema claro
+            </button>
+            <a href="projetos.html" target="_blank"><li class="Projetos">Projetos</li></a>
+            <a href="sobre.html" target="_blank"><li class="sobre">Sobre</li></a>
+        </ul>
+    </nav>
+    <main class="content"> <!--conteúdo principal-->
+        <div class="texto">
+            <p class="paragrafo">Opa, me chamo Gabriel.<br>Sou estudante de Eng. de Software pela Universidade de Vassouras, 
+                                atualmente estou no 2º período, e sigo em busca de conhecimento para ser um grande profissional no futuro.
+            </p>
+        </div>
+        <div class="profile-pic">
+            <a href="index.html"></a>
+            <img src="pics/imagens/profile.jpg" alt="Gabriel pic" id="Gab-Univ">
+        </div>
+    </main>
+    <footer class="redes-sociais-container"> <!--rodapé contendo link do github e redes-->
+        <div class="redes-wrapper">
+            <div class="button">
+                <div class="icon"> <a href="https://www.instagram.com/provietti_gabriel/" target="_blank"><i class="fa-brands fa-instagram"></i></a>                </div>
+            </div>
+            <div class="button">
+                <div class="icon"> <a href="https://github.com/g4b-dev" target="_blank"><i class="fa-brands fa-github-alt"></i></a>                </div>
+            </div>
+            <div class="button">
+                <div class="icon"> <a href="https://www.linkedin.com/in/gabriel-c-313838110/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>           </div>
+            </div>
+            <div class="button">
+                <div class="vass"> <a href="https://universidadedevassouras.edu.br" target="_blank"> <img src="pics/icons/vass.png" alt="logounivassouras"></a>           
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--js mudando a cor do body, gostaria de ir além e botar uma transição para exibir a logo da universidade quando clicasse no botão escrito universidade mas não consegui-->
+    <script>
+        var el_up = document.getElementById("GFG_UP");
+        var el_down = document.getElementById("GFG_DOWN");
+      
+        el_up.innerHTML = str;
+      
+        function changeColor(color) {
+            document.body.style.background = color;
+            document.getElementsById('logo').style.color;
+        }
+          
+        function gfg_Run() {
+            changeColor('#b1b1b1');
+        }         
+    </script> 
+</body>
+</html>
